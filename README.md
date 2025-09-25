@@ -1,2 +1,2 @@
 # games
-fun things to play
+some classic games in js
