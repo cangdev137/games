@@ -4,20 +4,20 @@ function generateComputerChoice(){
     const r = Math.floor(Math.random()*3);
     let cpuChoice="";
     if (r === 1)
-        cpuChoice = "rock";
+        cpuChoice = "Rock";
     else if (r === 2)
-        cpuChoice = "paper";
+        cpuChoice = "Paper";
     else 
-        cpuChoice = "scissors";
+        cpuChoice = "Scissors";
     return cpuChoice;
 }
 
 function getResult(userChoice, cpuChoice){
     if (userChoice === cpuChoice)
         return "Draw!"
-    else if ((userChoice === "rock" && cpuChoice === "scissors") ||
-             (userChoice === "paper" && cpuChoice === "rock") ||
-             (userChoice === "scissors" && cpuChoice === "paper"))
+    else if ((userChoice === "Rock" && cpuChoice === "Scissors") ||
+             (userChoice === "Paper" && cpuChoice === "Rock") ||
+             (userChoice === "Scissors" && cpuChoice === "Paper"))
             
         return "You Win!";
     else
